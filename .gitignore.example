@@ -1,0 +1,119 @@
+.env.example
+.env.local
+.env.development
+.env.production
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Flutter
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+*.iml
+
+# Android
+android/local.properties
+android/.gradle/
+android/app/debug/
+android/app/release/
+android/gradle/
+android/gradlew
+android/gradlew.bat
+
+# iOS
+ios/Pods/
+ios/Podfile.lock
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+# Web
+web/
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.config.dart
+lib/generated_plugin_registrant.dart
+
+# Sensitive files
+lib/firebase_options.dart
+secrets/
+*.jks
+*.p8
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# OS generated files
+.directory
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Xcode
+.xcodeproj/
+.xcworkspace/
+derivedData/
+.DS_Store
+
+# Gradle
+.gradle/
+build/
+
+# Coverage
+coverage/
+lcov.info
+
+# Test
+.coverage
+.hypothesis/
+
+# Documentation
+site/
+
+# Misc
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
