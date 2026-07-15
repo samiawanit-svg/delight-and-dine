@@ -8,7 +8,8 @@ import 'providers/order_provider.dart';
 import 'providers/menu_provider.dart';
 import 'screens/splash_screen.dart';
 import 'screens/auth/login_screen.dart';
-import 'screens/home_screen.dart';
+import 'screens/bottom_nav_screen.dart';
+import 'screens/no_route.dart';
 import 'theme/app_theme.dart';
 
 void main() async {
@@ -41,12 +42,24 @@ class DelightAndDineApp extends StatelessWidget {
               return const SplashScreen();
             }
             if (authProvider.isLoggedIn) {
-              return const HomeScreen();
+              return const BottomNavScreen();
             }
             return const LoginScreen();
           },
         ),
+        onGenerateRoute: _generateRoute,
       ),
     );
+  }
+
+  Route<dynamic> _generateRoute(RouteSettings settings) {
+    switch (settings.name) {
+      case '/login':
+        return MaterialPageRoute(builder: (_) => const LoginScreen());
+      case '/home':
+        return MaterialPageRoute(builder: (_) => const BottomNavScreen());
+      default:
+        return MaterialPageRoute(builder: (_) => const NoRoute());
+    }
   }
 }
